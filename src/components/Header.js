@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import {Link} from 'react-router-dom';
-import {Container,Navbar, Nav, NavDropdown, Button, Form, FormControl} from 'react-bootstrap' 
+import {Container,Navbar, Nav, NavDropdown, Button, Form, FormControl, NavLink} from 'react-bootstrap'
 import CategoryContext from '../contexts/CategoryContext';
 
 
@@ -17,11 +17,17 @@ const Header = () => {
         <Nav className="me-auto">
           <Nav.Link><Link to="/products" className="link-hover-white">Products</Link></Nav.Link>
           <NavDropdown title="Categories" id="navbarScrollingDropdown">
-          <NavDropdown.Item><Link to="/products/categories" className="link-black-no-a-dec link-hover-grey">All categories</Link></NavDropdown.Item>
-            {categories.map((category, index)=>{
-              return  (<NavDropdown.Item><Link to={`/products/categories/${category.categoryName}`} className="link-black-no-a-dec link-hover-grey" key={index}>{category.categoryName}</Link></NavDropdown.Item>)
-            })}
-        </NavDropdown>
+              <NavLink href="/products/categories" className="menu-link">
+                  All categories
+              </NavLink>
+              {categories.map((category, index)=>{
+                return  (<NavLink href={`/products/categories/${category.categoryName}`}
+                                   className="menu-link"
+                                   key={index}>
+                            {category.categoryName}
+                         </NavLink>)
+              })}
+          </NavDropdown>
         </Nav>
         <Nav className="m-auto">
         <Form className="d-flex">

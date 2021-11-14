@@ -37,15 +37,6 @@ const ProductDescriptionPage = () => {
         
                     <div className="ecommerce-gallery" data-mdb-zoom-effect="true" data-mdb-auto-height="true">
                     <div className="row py-3 shadow-5">
-                        <div className="col-12 mb-1">
-                            <div className="lightbox">
-                                <img
-                                src={product.photoUrl[0]}
-                                alt={product.prodName}
-                                className="ecommerce-gallery-main-img active w-100"
-                                />
-                            </div>
-                        </div>
                         {product.photoUrl.map((url,index)=>{
                             return(
                                 <div className="col-3 mt-1">

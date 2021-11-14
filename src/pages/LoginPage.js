@@ -8,7 +8,6 @@ import {AiTwotoneEyeInvisible, AiTwotoneEye} from 'react-icons/ai';
 
 const LoginPage = () => {
     const [showPassword, setShowPassword] = useState(false);
-    console.log(showPassword);
     return (
         <div className="container-fluid">
             <Header />

@@ -89,3 +89,36 @@ a{
 .link-hover-darkblue:hover{
   color:darkblue;
 }
+
+h3 {
+  margin: 10px;
+}
+
+.item {
+  margin: 20px 0;
+}
+
+.card-img-top {
+  padding: 3px 1px;
+}
+
+button:hover {
+  background-color: #5f6b76!important;
+  border-color: #546372!important;
+}
+
+.menu-link {
+  color: black!important;
+}
+
+.menu-link:hover {
+  color: #989797!important;
+}
+
+.nav-link:hover {
+  color: #989797 !important;
+}
+
+.ecommerce-gallery img {
+  max-width: 300px;
+}

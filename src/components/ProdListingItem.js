@@ -4,8 +4,8 @@ import {Link} from "react-router-dom"
 
 const ProdListingItem = (props) => {
     return (
-        <div className = "col-sm-6 col-lg-4 text-center">
-        <Card style={{ width: '18rem'}}>
+        <div className = "item col-sm-6 col-lg-4 col-xl-3 text-center">
+        <Card>
             <Link to = {`/products/details/${props.data._id}`} className="link-black-no-a-dec link-hover-grey"> 
             <Card.Img variant="top" src={props.data.photoUrl[0]} style={{height: '190px', 'objectFit':'cover'}}/>
             <Card.Body>

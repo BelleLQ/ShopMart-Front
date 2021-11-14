@@ -15,9 +15,9 @@ const SignUpPage = () => {
     });
     const createAccount = (evt) =>{
         evt.preventDefault();
+        console.log(JSON.stringify(formData));
 
-
-        fetch(`http://localhost:8080/users`,{
+        fetch(`http://localhost:8080/customers`,{
             method :"POST",
             headers : {
                 "Content-Type" : "application/json"
@@ -33,7 +33,6 @@ const SignUpPage = () => {
                 lastName : "",
                 email: "",
                 password: "",
-                confirmPassword : ""
             })
         })
         .catch(err=>{
@@ -58,15 +57,15 @@ const SignUpPage = () => {
                     <div className="mb-3">
                         <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
                         <div className="input-group">
-                            <input required type={showPassword?"password":"text"} className="form-control" id="password"/>
+                            <input required type={showPassword?"password":"text"} className="form-control" id="password" value={formData.password} onChange={(evt)=>{
+                                setFormData({...formData, password: evt.target.value})
+                                console.log(evt.target.value);
+                            }}/>
                             <span className="input-group-text">
                             <Link to="#" className="link-black-no-a-dec link-hover-grey" 
                             onClick={()=>
                                 setShowPassword(!showPassword)
-                            
-                            } value={formData.password} onChange={(evt)=>{
-                                setFormData({...formData, password: evt.target.value})
-                            }}>{showPassword?<AiTwotoneEyeInvisible />:<AiTwotoneEye/>}</Link>
+                            } >{showPassword?<AiTwotoneEyeInvisible />:<AiTwotoneEye/>}</Link>
                             </span>
                         </div>
                     </div>

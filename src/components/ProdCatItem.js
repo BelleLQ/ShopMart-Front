@@ -4,8 +4,8 @@ import {Card, Button} from 'react-bootstrap'
 
 const ProdCatItem = (props) => {
     return (
-        <div className = "col-sm-6 col-lg-4 text-center">
-            <Card style={{ width: '18rem'}}>
+        <div className = "item col-sm-6 col-lg-4 text-center">
+            <Card>
                 <Card.Img variant="top" src={props.data.photoUrl} style={{height: '190px', 'objectFit':'cover'}}/>
                 <Card.Body>
                     <Card.Title>{props.data.categoryName}</Card.Title>

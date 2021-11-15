@@ -7,14 +7,11 @@ import Hero from '../components/Hero';
 import ProdCategory from '../components/ProdCategory';
 import ProdListing from '../components/ProdListing';
 import ProductContext from '../contexts/ProductContext';
-import CategoryContext from '../contexts/CategoryContext';
 import HeroContext from '../contexts/HeroContext'
 
 
 const HomePage = () => {
-console.log(process.env);
     const{setProducts} = useContext(ProductContext);
-    const{setCategories} = useContext(CategoryContext);
     const{setHeros} = useContext(HeroContext);
     
     

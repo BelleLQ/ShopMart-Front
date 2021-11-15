@@ -1,4 +1,4 @@
-import React, {useEffect, useContext, useState} from 'react'
+import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -13,9 +13,9 @@ const SignUpPage = () => {
 		password: "",
 		phoneNumber: ""
     });
+
     const createAccount = (evt) =>{
         evt.preventDefault();
-        console.log(JSON.stringify(formData));
 
         fetch(`${process.env.REACT_APP_BACK_END_API_DOMAIN}/customers`,{
             method :"POST",
@@ -39,7 +39,7 @@ const SignUpPage = () => {
             console.log(`Error ${err}`)
         })
     }
-    
+
 
     return (
         <div className="container-fluid">
@@ -59,7 +59,6 @@ const SignUpPage = () => {
                         <div className="input-group">
                             <input required type={showPassword?"password":"text"} className="form-control" id="password" value={formData.password} onChange={(evt)=>{
                                 setFormData({...formData, password: evt.target.value})
-                                console.log(evt.target.value);
                             }}/>
                             <span className="input-group-text">
                             <Link to="#" className="link-black-no-a-dec link-hover-grey" 
@@ -68,6 +67,7 @@ const SignUpPage = () => {
                             } >{showPassword?<AiTwotoneEyeInvisible />:<AiTwotoneEye/>}</Link>
                             </span>
                         </div>
+
                     </div>
                     <hr className="form-divider"/>
                     <div className="mb-3">
@@ -75,18 +75,21 @@ const SignUpPage = () => {
                         <input required type="text" className="form-control" id="firstName" value={formData.firstName} onChange={(evt)=>{
                             setFormData({...formData, firstName: evt.target.value})
                         }}/>
+
                     </div>
                     <div className="mb-3">
                         <label htmlFor="lastName" className="form-label">Last Name</label>
                         <input required type="text" className="form-control" id="lastName" value={formData.lastName} onChange={(evt)=>{
                             setFormData({...formData, lastName: evt.target.value})
                         }}/>
+
                     </div>
                     <div className="mb-3">
                         <label htmlFor="phoneNumber" className="form-label">Phone Number</label>
                         <input required type="text" className="form-control" id="phoneNumber" value={formData.phoneNumber} onChange={(evt)=>{
                             setFormData({...formData, phoneNumber: evt.target.value})
                         }}/>
+
                     </div>
                     <div className="mb-3">
                         <input required type="checkbox" id="gridCheck"/>                        

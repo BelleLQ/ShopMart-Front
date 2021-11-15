@@ -7,11 +7,10 @@ import {useParams} from "react-router-dom";
 
 
 
-const ProductCategoryPage = (props) => {
+const ProductCategoryPage = () => {
     const{setProducts} = useContext(ProductContext);
     const{catName} = useParams();
-    console.log(props);
-   
+
     useEffect(()=>{
         if(catName){
             fetch(`${process.env.REACT_APP_BACK_END_API_DOMAIN}/products?category=${catName}`)

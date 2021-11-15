@@ -1,5 +1,5 @@
 # Shop Mart Website
-This is a e-commerce website that allow users to browse products, register and log in. \
+This is an online shopping website that allow users to browse products, register and log in. \
 This website is built using MERN stack, and hosted on Netlify.
 
 ### URL:

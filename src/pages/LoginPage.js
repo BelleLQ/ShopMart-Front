@@ -12,7 +12,7 @@ const LoginPage = () => {
         <div className="container-fluid">
             <Header />
             <main>
-                <div className="container w-50 my-4">
+                <div className="container form-container w-50 my-4">
                 <h4 className="text-center">Log In</h4>
                 <form>
                     <div class="mb-3">

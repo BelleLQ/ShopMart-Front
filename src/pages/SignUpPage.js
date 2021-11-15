@@ -17,7 +17,7 @@ const SignUpPage = () => {
         evt.preventDefault();
         console.log(JSON.stringify(formData));
 
-        fetch(`http://localhost:8080/customers`,{
+        fetch(`${process.env.REACT_APP_BACK_END_API_DOMAIN}/customers`,{
             method :"POST",
             headers : {
                 "Content-Type" : "application/json"

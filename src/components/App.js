@@ -24,29 +24,31 @@ import HeroContext from '../contexts/HeroContext';
 const App = () => {
   const [products, setProducts] = useState(
     [{
-      "prodName": "Gourmet du Village Hot Chocolate Mini, Candy Cane White Retro Snowman",
-      "price": 1.50,
-      "description": "Just add hot water or milk.",
-      "category": "Grocery",
-      "quantity": 359,
+      "prodName": "",
+      "price": 0,
+      "description": "",
+      "category": "",
+      "quantity": 0,
       "isBestSeller": false,
-      "photoUrl":["https://m.media-amazon.com/images/I/713gDrVJvTL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/818jPwFxXbL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/31BQfgzPGcL._AC_.jpg"]},
+      "photoUrl":[]},
     ]);
-  const [categories, setCategories] = useState(["Grocery"]);
+  const [categories, setCategories] = useState([{
+        "categoryName": "",
+        "photoUrl": "",
+        "categoryDesc": "",
+  }]);
   const [heros, setHeros] = useState(
     [{
-      "heroName": "Stylish clothes",
-      "description": "Black Friday Sales - All stylish clothes 50% off",
-      "photoUrl": "https://img.huffingtonpost.com/asset/5ce6bd0c210000b90ed0ed6a.jpeg?ops=1778_1000",
-      "startDate": "2021-11-12",
-      "endDate":"2022-11-21"
+      "heroName": "",
+      "description": "",
+      "photoUrl": "",
+      "startDate": "",
+      "endDate":""
     }])
 
   useEffect(()=>{
     //fetch product categories
-    fetch("http://localhost:8080/products/categories")
+    fetch(`${process.env.REACT_APP_BACK_END_API_DOMAIN}/products/categories`)
     .then(res=>res.json())
     .then(jsonData=>{
         setCategories(jsonData.data);

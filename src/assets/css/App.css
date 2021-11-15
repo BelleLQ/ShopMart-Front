@@ -94,12 +94,16 @@ h3 {
   margin: 10px;
 }
 
+h5{
+  margin-top:15px;
+}
 .item {
   margin: 20px 0;
 }
 
 .card-img-top {
-  padding: 3px 1px;
+  padding-top: 15px;
+  max-width: fit-content;
 }
 
 button:hover {
@@ -121,4 +125,8 @@ button:hover {
 
 .ecommerce-gallery img {
   max-width: 300px;
+}
+
+.form-container{
+  min-height: 72vmin;
 }

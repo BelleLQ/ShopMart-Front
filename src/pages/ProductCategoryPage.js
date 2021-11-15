@@ -14,7 +14,7 @@ const ProductCategoryPage = (props) => {
    
     useEffect(()=>{
         if(catName){
-            fetch(`http://localhost:8080/products?category=${catName}`)
+            fetch(`${process.env.REACT_APP_BACK_END_API_DOMAIN}/products?category=${catName}`)
             .then(res=>res.json())
             .then(jsonData=>{
                 setProducts(jsonData.data);
@@ -24,7 +24,7 @@ const ProductCategoryPage = (props) => {
             })
         }
         else{
-            fetch(`http://localhost:8080/products`)
+            fetch(`${process.env.REACT_APP_BACK_END_API_DOMAIN}/products`)
             .then(res=>res.json())
             .then(jsonData=>{
                 setProducts(jsonData.data);

@@ -9,7 +9,7 @@ const ProductListingPage = () => {
     const{setProducts} = useContext(ProductContext);
 
     useEffect(()=>{
-        fetch("http://localhost:8080/products")
+        fetch(`${process.env.REACT_APP_BACK_END_API_DOMAIN}/products`)
         .then(res=>res.json())
         .then(jsonData=>{
             setProducts(jsonData.data);

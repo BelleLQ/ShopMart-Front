@@ -12,7 +12,7 @@ import HeroContext from '../contexts/HeroContext'
 
 
 const HomePage = () => {
-
+console.log(process.env);
     const{setProducts} = useContext(ProductContext);
     const{setCategories} = useContext(CategoryContext);
     const{setHeros} = useContext(HeroContext);
@@ -20,7 +20,7 @@ const HomePage = () => {
     
     useEffect(()=>{
         //fetch best seller products
-        fetch("http://localhost:8080/products?isBestSeller=true")
+        fetch(`${process.env.REACT_APP_BACK_END_API_DOMAIN}/products?isBestSeller=true`)
         .then(res=>res.json())
         .then(jsonData=>{
             setProducts(jsonData.data);
@@ -31,7 +31,7 @@ const HomePage = () => {
 
 
         //fetch heros item
-        fetch("http://localhost:8080/heros")
+        fetch(`${process.env.REACT_APP_BACK_END_API_DOMAIN}/heros`)
         .then(res=>res.json())
         .then(jsonData=>{
             setHeros(jsonData.data);

@@ -63,10 +63,15 @@ const ProductDescriptionPage = () => {
                             </div>
                         </div>
                         <div className="col-7">
-                                <h2>{product.prodName}</h2>
-                                <button type="button" className="align-items-center justify-content-center btn btn-dark">${product.price}</button>
+                            <span>
+                                <h2 className="d-inline-block">{product.prodName}</h2>
+                                <p className="d-inline-block m-2 textred font-italic">Best Seller</p>
+                            </span>
+                                <button type="button" className="d-block align-items-center justify-content-center btn btn-dark">${product.price}</button>
                                 <h5>About this item</h5>
-                                <p>{product.description}</p>
+                                <p className="font-weight-light">{product.description}</p>
+                                <h5 className="d-inline-block">Category</h5>
+                                <p className="d-inline-block m-1 font-weight-light">{product.category.categoryName}</p>
                         </div>
                     </div>
                 </div>

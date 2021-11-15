@@ -130,3 +130,7 @@ button:hover {
 .form-container{
   min-height: 72vmin;
 }
+
+.textred{
+  color: #f52020;
+}

@@ -105,6 +105,10 @@ h5{
   padding-top: 15px;
   max-width: fit-content;
 }
+.card-img-top:hover{
+  transform: scale(1.2);
+  padding-top: 20px;
+}
 
 button:hover {
   background-color: #5f6b76!important;

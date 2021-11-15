@@ -36,7 +36,7 @@ const ProductCategoryPage = () => {
 })
 
     return (
-        <div className="container-fluid">
+        <div className="container-fluid p-0">
             <Header />
             <main>
                 <SideBar title={catName?catName:"All products"}/>

@@ -19,7 +19,7 @@ const ProductListingPage = () => {
         })
     },[])
     return (
-        <div className="container-fluid">
+        <div className="container-fluid p-0">
             <Header />
             <main>
                 <ProdListing title="All products"/>

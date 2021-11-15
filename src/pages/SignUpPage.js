@@ -42,7 +42,7 @@ const SignUpPage = () => {
 
 
     return (
-        <div className="container-fluid">
+        <div className="container-fluid p-0">
             <Header />
             <main>
                 <div className="container w-50 my-4">

@@ -29,7 +29,7 @@ const ProductDescriptionPage = () => {
     },[])
 
     return (
-        <div className="container-fluid">
+        <div className="container-fluid p-0">
             <Header />
             <main>
             <section id="product-description-section">

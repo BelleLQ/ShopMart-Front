@@ -3,7 +3,11 @@ This is an online shopping website that allow users to browse products, register
 This website is built using MERN stack, and hosted on Netlify.
 
 ### URL:
+Deployment:
 https://flamboyant-morse-789f6d.netlify.app/
+\
+Back-end API:
+https://github.com/BelleLQ/Shopmart-API
 
 # Contents of the website
 ## Home Page

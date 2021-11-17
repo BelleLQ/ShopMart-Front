@@ -9,7 +9,7 @@ const HeroItem = (props) => {
         <div className="carousel-caption d-flex h-100 align-items-start justify-content-start">
           </div>
         <div className="carousel-caption d-flex h-100 align-items-center justify-content-center">
-          <h2 className="fw-bold" style={{color:'black'}}><Link to="/products">{props.data.description}</Link></h2>
+          <h2 className="fw-bold" style={{color:'black'}}><Link to="/products" className="underline-fade-in">{props.data.description}</Link></h2>
         </div>
     </div>
     )

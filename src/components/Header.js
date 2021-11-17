@@ -11,12 +11,12 @@ const Header = () => {
       <header>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container className="m-0" style={{width:'100%'}}>
-      <Navbar.Brand><Link to="/" className="link-hover-white">Shop Mart</Link></Navbar.Brand>
+      <Navbar.Brand><Link to="/" className="link-hover-white ">Shop Mart</Link></Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="me-auto">
-          <Nav.Link><Link to="/products" className="link-hover-white">Products</Link></Nav.Link>
-          <NavDropdown title="Categories" id="navbarScrollingDropdown">
+          <Nav.Link><Link to="/products" className="underline-fade-in">Products</Link></Nav.Link>
+          <NavDropdown title="Categories" id="navbarScrollingDropdown" renderMenuOnMount={true}>
               <NavLink href="/products/categories" className="menu-link">
                   All categories
               </NavLink>
@@ -41,8 +41,8 @@ const Header = () => {
       </Form>
       </Nav>
       <Nav>
-          <Nav.Link><Link to="/login" className="link-hover-white">Log In</Link></Nav.Link>
-          <Nav.Link><Link to="/signup" className="link-hover-white">Sign Up</Link></Nav.Link>
+          <Nav.Link><Link to="/login" className="underline-fade-in">Log In</Link></Nav.Link>
+          <Nav.Link><Link to="/signup" className="underline-fade-in">Sign Up</Link></Nav.Link>
         </Nav>
       </Navbar.Collapse>
       </Container>

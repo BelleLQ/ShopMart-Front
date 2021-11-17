@@ -67,11 +67,13 @@ a{
 .underline-fade-in {
   display: block;
   position: relative;
-  padding: 0.2em 0;
+
+}
+.underline-fade-in:hover {
+  color: white;
 }
 
 .underline-fade-in::after {
-
   content: '';
   position: absolute;
   bottom: 0;
@@ -81,11 +83,10 @@ a{
   background-color: white;
   opacity: 0;
   transition: opacity 300ms, transform 300ms;
-
 }
 
 .underline-fade-in:hover::after,
-.underline-fade-in:focus::after {
+.underline-fade-in:focus::after{
   opacity: 1;
   transform: translate3d(0, 0.2em, 0);
 }

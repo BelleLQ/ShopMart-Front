@@ -15,8 +15,8 @@ const Header = () => {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="me-auto">
-          <Nav.Link><Link to="/products" className="underline-fade-in">Products</Link></Nav.Link>
-          <NavDropdown title="Categories" id="navbarScrollingDropdown" renderMenuOnMount={true}>
+          <Nav.Link  className="underline-fade-in"><Link to="/products">Products</Link></Nav.Link>
+          <NavDropdown title={<span><Link to="#">Categories</Link></span>} id="navbarScrollingDropdown" className="underline-fade-in" renderMenuOnMount={true}>
               <NavLink href="/products/categories" className="menu-link">
                   All categories
               </NavLink>
@@ -41,8 +41,8 @@ const Header = () => {
       </Form>
       </Nav>
       <Nav>
-          <Nav.Link><Link to="/login" className="underline-fade-in">Log In</Link></Nav.Link>
-          <Nav.Link><Link to="/signup" className="underline-fade-in">Sign Up</Link></Nav.Link>
+          <Nav.Link className="underline-fade-in"><Link to="/login">Log In</Link></Nav.Link>
+          <Nav.Link className="underline-fade-in"><Link to="/signup">Sign Up</Link></Nav.Link>
         </Nav>
       </Navbar.Collapse>
       </Container>

@@ -1,8 +1,15 @@
+@import url(//db.onlinewebfonts.com/c/28cd2d1c6f94e83a67d26c546c20ff66?family=MangoSans);
+@font-face {font-family: "MangoSans"; src: url("//db.onlinewebfonts.com/t/28cd2d1c6f94e83a67d26c546c20ff66.eot"); src: url("//db.onlinewebfonts.com/t/28cd2d1c6f94e83a67d26c546c20ff66.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/28cd2d1c6f94e83a67d26c546c20ff66.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/28cd2d1c6f94e83a67d26c546c20ff66.woff") format("woff"), url("//db.onlinewebfonts.com/t/28cd2d1c6f94e83a67d26c546c20ff66.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/28cd2d1c6f94e83a67d26c546c20ff66.svg#MangoSans") format("svg"); }
+
 .App {
   text-align: center;
 }
+a{
+  font-family: 'Mangosans';
+}
+
 a:hover{
-  color:white;
+  color:grey;
 }
 
 .App-logo {
@@ -45,7 +52,7 @@ a:hover{
 }
 
 a{
-  color: rgba(255,255,255,.5);
+  color: black;
   text-decoration: none !important;
 }
 
@@ -105,7 +112,7 @@ a{
 }
 
 .link-hover-white:hover{
-  color:white;
+  color:black;
 }
 
 .bg-grey{
@@ -123,16 +130,26 @@ a{
 
 h3 {
   margin: 10px 0 0 10px;
-  font-family: 'Amiko', sans-serif;
+  font-family: 'Mangosans', sans-serif;
 }
 
 h5{
   margin-top:15px;
 }
 .item {
-  margin: 20px 0;
+  padding: 1px;
 }
-
+.card{
+  height:25vw;
+}
+.card-body{
+  flex: 1 1 auto;
+  padding-top: 12rem;
+  text-align: left;
+  color: black;
+  font-family: 'Mangosans';
+  text-shadow: 1px 1px white;
+}
 .card-img-top {
   padding-top: 15px;
   max-width: fit-content;
@@ -173,10 +190,16 @@ button:hover {
 }
 
 
-.nav-link{
-  font-family: 'Amiko', sans-serif;
-}
+
 
 #carouselExampleControls{
   margin: 15px 0;
+}
+
+.logo-text{
+  font-family: 'Orbitron', sans-serif;
+}
+
+.product-listing-title{
+  height:10vw;
 }

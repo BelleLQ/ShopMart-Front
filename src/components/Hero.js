@@ -7,8 +7,7 @@ const Hero = () => {
   const{heros} = useContext(HeroContext);
     return (
       <section id="hero-section container-fluid" style={{overflow: 'hidden', height: 'fit-content'}}>
-         <h3>Promotion</h3>
-        <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" className="carousel slide m-0" data-bs-ride="carousel">
           <div className="carousel-inner">
             {heros.map((hero,index)=>{
                       if(index===0){return   <HeroItem key={index} data={hero} active='true'/>}

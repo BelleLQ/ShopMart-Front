@@ -8,7 +8,9 @@ const ProdListing = (props) => {
     return (
         <section className="product-listing-section">
         <div className="container-fluid p-0">
-            <h3>{props.title}</h3>
+            <div className="product-listing-title d-flex">
+            <h3 className="text-center m-auto">{props.title}</h3>
+            </div>
             <div className="row">
                 {products.map((product,index)=>(
                     <ProdListingItem key={index} data={product}/>

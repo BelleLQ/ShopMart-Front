@@ -10,11 +10,11 @@ const ProdCategory = () => {
     return (
         <section id="product-category">
         <div className="container-fluid p-0">
-            <h3>Product Categories</h3>
             <div className="row">
-                {categories.map((category,index)=>(
-                    <ProdCatItem key={index} data={category}/>
-                ))}
+                {categories.map((category,index)=> {
+                    if (index < 4) return <ProdCatItem key={index} data={category}/>
+
+                })}
                 </div>
         </div>
         </section>

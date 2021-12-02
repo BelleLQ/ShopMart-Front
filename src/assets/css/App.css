@@ -142,7 +142,7 @@ h5{
 .card{
   height:25vw;
 }
-.card-body{
+.card-body-category{
   flex: 1 1 auto;
   padding-top: 12rem;
   text-align: left;

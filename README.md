@@ -12,21 +12,18 @@ https://github.com/BelleLQ/Shopmart-API
 # Contents of the website
 ## Home Page
 Including Promotion, Product Categories, and Best Seller sections.
-<img width="1423" alt="Screen Shot 2021-11-14 at 10 29 11 PM" src="https://user-images.githubusercontent.com/59607658/141717852-0cf8c0d6-c07d-48ee-b2b1-16abdd497edf.png">
-<img width="1431" alt="Screen Shot 2021-11-14 at 10 29 23 PM" src="https://user-images.githubusercontent.com/59607658/141717865-d9567117-0612-4496-a5f2-0a18c1758b0d.png">
-<img width="1435" alt="Screen Shot 2021-11-14 at 10 29 46 PM" src="https://user-images.githubusercontent.com/59607658/141717889-e8a223bf-a580-4515-afdf-21fc6b7c7dd7.png">
-
+<img width="1437" alt="Screen Shot 2021-12-02 at 1 01 13 AM" src="https://user-images.githubusercontent.com/59607658/144366499-456a34e0-44d1-4869-bcae-156de9300def.png">
+<img width="1437" alt="Screen Shot 2021-12-02 at 1 15 31 AM" src="https://user-images.githubusercontent.com/59607658/144368107-ec24e5fa-0bdf-4c2c-aa8d-59720a6809a8.png">
 ## Product Listing Page
-<img width="1425" alt="Screen Shot 2021-11-14 at 10 30 02 PM" src="https://user-images.githubusercontent.com/59607658/141717919-d7f0ec7f-913e-4f2f-b89b-87866ddb7cf4.png">
+<img width="1437" alt="Screen Shot 2021-12-02 at 1 16 10 AM" src="https://user-images.githubusercontent.com/59607658/144368182-20170cfa-1e6a-4eb5-be24-a50d0b74fabb.png">
 
 ## Product Category Page
-<img width="1427" alt="Screen Shot 2021-11-14 at 10 30 20 PM" src="https://user-images.githubusercontent.com/59607658/141717949-8346a5a4-57fa-46f1-8c7e-afe83bb03614.png">
+<img width="1437" alt="Screen Shot 2021-12-02 at 1 16 43 AM" src="https://user-images.githubusercontent.com/59607658/144368263-1604b4a5-8997-43e4-95cd-4d565649063e.png">
 
 ## Sign Up Page
-<img width="718" alt="Screen Shot 2021-11-14 at 10 30 33 PM" src="https://user-images.githubusercontent.com/59607658/141717965-a7a238d9-6c39-4627-8d6c-7bf907a8c051.png">
-
+<img width="1437" alt="Screen Shot 2021-12-02 at 1 17 23 AM" src="https://user-images.githubusercontent.com/59607658/144368350-e01f0207-3e05-4cdc-b03e-08901ad08e81.png">
 ## Log In Page
-<img width="1416" alt="Screen Shot 2021-11-14 at 10 30 42 PM" src="https://user-images.githubusercontent.com/59607658/141717982-0411f3f7-d89f-4a13-9747-84591d1bc5ed.png">
+<img width="1437" alt="Screen Shot 2021-12-02 at 1 17 44 AM" src="https://user-images.githubusercontent.com/59607658/144368402-1d2f9409-38f8-4f9f-921c-fff82ac69f5e.png">
 
 # How to run this project
 1. Clone this repository to your local folder.

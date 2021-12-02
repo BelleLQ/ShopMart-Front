@@ -10,7 +10,7 @@ const ProdCatItem = (props) => {
             >
                 <Card style={{ overflow: 'hidden', background: `url(${props.data.photoUrl})  center center / cover no-repeat`}}>
 
-                    <Card.Body>
+                    <Card.Body className="card-body-category">
                         <Card.Title>{props.data.categoryName}</Card.Title>
                         <Card.Text style={{height:'80px'}}>
                             {props.data.categoryDesc}

@@ -4,7 +4,7 @@ This website is built using MERN stack, and hosted on Netlify.
 
 ### URL:
 Deployment:
-https://flamboyant-morse-789f6d.netlify.app/
+https://shopmart.bellelqweb.com
 \
 Back-end API:
 https://github.com/BelleLQ/Shopmart-API

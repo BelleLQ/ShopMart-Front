@@ -9,7 +9,7 @@ const Hero = () => {
       <section id="hero-section container-fluid" style={{overflow: 'hidden', height: 'fit-content'}}>
         <div id="carouselExampleControls" className="carousel slide m-0" data-bs-ride="carousel">
           <div className="carousel-inner">
-            {heros&&heros.map((hero,index)=>{
+            {heros!==undefined && heros.map((hero,index)=>{
                       if(index===0){return   <HeroItem key={index} data={hero} active='true'/>}
                       else return   <HeroItem key={index} data={hero}/>
                         })}
